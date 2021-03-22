@@ -9,13 +9,10 @@ new password.
 This generation method should accept some options:
 
 - `length` — (integer) length of the generated password
-- `uppercase` — (integer) minimum number of uppercase `A-Z` characters
-- `lowercase` — (integer) minimum number of lowercase `a-z` characters
+- `uppercase` — (boolean) include uppercase `A-Z` characters
+- `lowercase` — (boolean) include lowercase `a-z` characters
 - `number` — (integer) exact number of numeric `0-9` characters
 - `special` — (integer) exact number of special `@%!?*^&` characters
-
-Any of the above character type options are disabled by setting them to `0`,
-meaning no characters of that type appear in the password.
 
 The function should produce an error in the event of invalid options.
 
