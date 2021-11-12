@@ -22,6 +22,6 @@ We know your time is valuable and only want this test to take 1-2 hours, so you 
 
 ## Submitting your test
 
-Push your code into a private repository on GitHub, and invite @js1300 with read access. Please make sure you include a clear readme with instructions on how to run your application locally.
+Push your code into a private repository on GitHub, and invite @adamcooke and @js1300 with read access. Please make sure you include a clear readme with instructions on how to run your application locally.
 
 Also feel free to include any difficulties or challenges you faced while building out the application.
