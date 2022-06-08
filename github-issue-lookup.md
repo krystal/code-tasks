@@ -10,7 +10,7 @@ This is not a design task so you don't need to worry about the actual styling of
 
 * For this task, you can work with public repositories without needing to authenticate but thought should be given to how this would work with private repositories.
 * It should be possible configure a mapping of issue prefix to the actual repository it is associated with.
-* At a minimum, the service should return the name of the issue as well as the whether it is currently open or closed.
+* At a minimum, the service should return the name of the issue as well as whether it is currently open or closed.
 * You should use the GitHub REST API (https://docs.github.com/en/rest). To allow you to demonstrate working with HTTP APIs directly, we would prefer that you didn't use a pre-existing GitHub API client (such as Octokit) unless it is one you have written yourself.
 * The language you should use for this task will have already been discussed with you.
 * Use Git for version control.
