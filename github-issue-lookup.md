@@ -20,4 +20,4 @@ This is not a design task so you don't need to worry about the actual styling of
 
 ## Submission
 
-The preferred way to submit your work to us is to publish it on GitHub as a private repo (just invite @adamcooke to it). Alternatively, send us a zip file with the full codebase within.
+The preferred way to submit your work to us is to publish it on GitHub as a private repo (just invite [@adamcooke](https://github.com/adamcooke) to it). Alternatively, send us a zip file with the full codebase within.
