@@ -15,7 +15,7 @@ This is not a design task so you don't need to worry about the actual styling of
 * The language you should use for this task will have already been discussed with you.
 * Use Git for version control.
 * Include what you think is an appropriate level of testing (spoiler: no tests isn't an appropriate level)
-* A README should be included with instructions about how to run the application and any tests. This can also include details behind any thought processes or additional features you might include with an unlimited time buget. 
+* A README should be included with instructions about how to run the application and any tests. This can also include details behind any thought processes or additional features you might include with an unlimited time budget. 
 * We recommend using a linting tool to ensure that your code is formatted consistently. You can apply whatever custom rules you feel appropriate.
 
 ## Submission
