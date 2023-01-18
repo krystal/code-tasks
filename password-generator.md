@@ -6,7 +6,7 @@ It should be possible to generate a password by calling a method—you may choos
 the method signature for this. The method should return a string containing the
 new password.
 
-This generation method should accept some options:
+This generation method should accept the following options which define the requirements of returned passwords:
 
 - `length` — (integer) length of the generated password
 - `uppercase` — (boolean) include uppercase `A-Z` characters
