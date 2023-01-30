@@ -25,11 +25,10 @@ library or application.
 
 Tests should be included to verify that the code works as intended.
 
-Documentation should be included to demonstrate how to use this tool. A well
-written README is more than sufficient.
-
-Do make some notes about any difficulties or issues you encountered during the
-development of this.
+Documentation should be included to demonstrate how to use the library. A well
+written README is more than sufficient. Please add some notes about how you
+approached the problem, and any difficulties or issues you encountered during
+development.
 
 Push the library into a private repository on GitHub, and invite @adamcooke and @js1300 with
 read access.
