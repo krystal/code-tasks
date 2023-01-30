@@ -9,8 +9,8 @@ new password.
 This generation method should accept the following options which define the requirements of returned passwords:
 
 - `length` — (integer) length of the generated password
-- `uppercase` — (boolean) include uppercase `A-Z` characters
-- `lowercase` — (boolean) include lowercase `a-z` characters
+- `uppercase` — (boolean) include one or more uppercase `A-Z` characters
+- `lowercase` — (boolean) include one or more lowercase `a-z` characters
 - `number` — (integer) exact number of numeric `0-9` characters
 - `special` — (integer) exact number of special `@%!?*^&` characters
 
