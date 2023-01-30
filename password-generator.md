@@ -6,11 +6,12 @@ It should be possible to generate a password by calling a method—you may choos
 the method signature for this. The method should return a string containing the
 new password.
 
-This generation method should accept the following options which define the requirements of returned passwords:
+This generation method should accept the following options which define the
+requirements of returned passwords:
 
 - `length` — (integer) length of the generated password
-- `uppercase` — (boolean) include uppercase `A-Z` characters
-- `lowercase` — (boolean) include lowercase `a-z` characters
+- `uppercase` — (boolean) include one or more uppercase `A-Z` characters
+- `lowercase` — (boolean) include one or more lowercase `a-z` characters
 - `number` — (integer) exact number of numeric `0-9` characters
 - `special` — (integer) exact number of special `@%!?*^&` characters
 
@@ -18,18 +19,18 @@ The function should produce an error in the event of invalid options.
 
 External libraries are allowed for testing purposes. The actual password
 generation code however should be implemented in your code, and not simply call
-out to an external library that does all the work.
+out to an external library that generates passwords for you.
 
-The code should be packaged as a module which could be included into another
-library or application.
+The code should be packaged as a library/module which could be included into
+other libraries and applications.
 
 Tests should be included to verify that the code works as intended.
 
-Documentation should be included to demonstrate how to use this tool. A well
-written README is more than sufficient.
+Documentation should be included to demonstrate how to use the library. A well
+written README is more than sufficient. Please add some notes about how you
+approached the problem, and any difficulties or issues you encountered during
+development.
 
-Do make some notes about any difficulties or issues you encountered during the
-development of this.
-
-Push the library into a private repository on GitHub, and invite @adamcooke and @js1300 with
-read access.
+Push the library into a private repository on GitHub, and invite both
+[@adamcooke](https://github.com/adamcooke) and
+[@js1300](https://github.com/js1300) with read access.
