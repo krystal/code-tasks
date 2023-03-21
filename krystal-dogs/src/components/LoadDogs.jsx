@@ -6,7 +6,7 @@ export const LoadDogs = ({ dogs }) => {
       className="max-w-sm rounded border bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800"
       controls
     >
-      <source src={toggleImage} type="video/mp4" />
+      <source src={toggleImage} type="video/mp4" alt="random dogs" />
     </video>
   ) : (
     <img
