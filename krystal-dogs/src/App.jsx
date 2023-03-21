@@ -1,7 +1,13 @@
-import React, { useEffect, useState, useTransition } from "react";
+import React, {
+  useEffect,
+  useState,
+  useTransition,
+  lazy,
+  Suspense,
+} from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import axios from "axios";
-import FavouriteDogs from "./pages/FavouriteDogs";
+
 import DogGenerator from "./pages/DogGenerator";
 import { fetchDogs } from "./api";
 function App() {
@@ -10,7 +16,7 @@ function App() {
   const [error, setError] = useState("");
   const [isLoading, setLoading] = useState(true);
   const [isPending, startTransition] = useTransition();
-
+  const FavouriteDogs = lazy(() => import("./pages/FavouriteDogs"));
   useEffect(() => {
     getData();
     return () => {};
@@ -63,10 +69,12 @@ function App() {
           <Route
             path="/faves"
             element={
-              <FavouriteDogs
-                favouriteDogs={favouriteDogs}
-                setFavourite={setFavourite}
-              />
+              <Suspense fallback={<div>Loading...</div>}>
+                <FavouriteDogs
+                  favouriteDogs={favouriteDogs}
+                  setFavourite={setFavourite}
+                />
+              </Suspense>
             }
           />
         </Routes>

@@ -2,7 +2,6 @@ import React from "react";
 import { LoadDogs } from "../components/LoadDogs";
 import { useNavigate } from "react-router-dom";
 const FavouriteDogs = ({ favouriteDogs, setFavourite }) => {
-  console.log(favouriteDogs);
   const navigate = useNavigate();
   const ClearFavourites = () => {
     localStorage.setItem("favouriteDogs", "");
