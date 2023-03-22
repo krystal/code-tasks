@@ -6,39 +6,11 @@ import React, {
   Suspense,
 } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import axios from "axios";
-
 import DogGenerator from "./pages/DogGenerator";
-import { fetchDogs } from "./api";
+import { useDog } from "./contexts/DogContext";
 function App() {
-  const [dogs, setDogs] = useState({ url: "" });
-  const [favouriteDogs, setFavourite] = useState([]);
-  const [error, setError] = useState("");
-  const [isLoading, setLoading] = useState(true);
-  const [isPending, startTransition] = useTransition();
   const FavouriteDogs = lazy(() => import("./pages/FavouriteDogs"));
-  useEffect(() => {
-    getData();
-    return () => {};
-  }, []);
-  const getData = async () => {
-    try {
-      setLoading(false);
-      const response = await fetchDogs();
-      startTransition(() => {
-        setDogs({ url: response.url });
-      });
-    } catch (error) {
-      setError(error);
-      setLoading(false);
-    }
-  };
-  useEffect(() => {
-    const storedFavourites = localStorage.getItem("favouriteDogs");
-    if (storedFavourites) {
-      setFavourite(JSON.parse(storedFavourites));
-    }
-  }, []);
+  const { error, isLoading } = useDog();
 
   const DisplayDogs = () => {
     return error ? (
@@ -49,12 +21,7 @@ function App() {
         <span>{error.message}</span>
       </div>
     ) : (
-      <DogGenerator
-        dogs={dogs}
-        fetchDogs={getData}
-        setFavourite={setFavourite}
-        favouriteDogs={favouriteDogs}
-      />
+      <DogGenerator />
     );
   };
 
@@ -70,10 +37,7 @@ function App() {
             path="/faves"
             element={
               <Suspense fallback={<div>Loading...</div>}>
-                <FavouriteDogs
-                  favouriteDogs={favouriteDogs}
-                  setFavourite={setFavourite}
-                />
+                <FavouriteDogs />
               </Suspense>
             }
           />

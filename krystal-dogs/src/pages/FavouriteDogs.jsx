@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { LoadDogs } from "../components/LoadDogs";
 import { useNavigate } from "react-router-dom";
-const FavouriteDogs = ({ favouriteDogs, setFavourite }) => {
+import { useDog } from "../contexts/DogContext";
+const FavouriteDogs = () => {
+  const { favouriteDogs, setFavourite } = useDog();
+
   const navigate = useNavigate();
   const ClearFavourites = () => {
     localStorage.setItem("favouriteDogs", "");
@@ -30,7 +33,7 @@ const FavouriteDogs = ({ favouriteDogs, setFavourite }) => {
 
         <div class="grid grid-cols-3 items-center gap-4">
           {favouriteDogs.map((dogs) => (
-            <LoadDogs dogs={dogs} />
+            <LoadDogs key={dogs.byte} dogs={dogs} />
           ))}
         </div>
       </div>

@@ -1,7 +1,11 @@
 import React, { Suspense } from "react";
 import { LoadDogs } from "../components/LoadDogs";
 import { useNavigate } from "react-router-dom";
-const DogGenerator = ({ dogs, fetchDogs, setFavourite, favouriteDogs }) => {
+import { useDog } from "../contexts/DogContext";
+
+const DogGenerator = () => {
+  const { favouriteDogs, setFavourite, dogs, getData } = useDog();
+
   const navigate = useNavigate();
   const addFavourite = (dogs, setFavourite) => {
     if (favouriteDogs.includes(dogs.url)) {
@@ -18,13 +22,13 @@ const DogGenerator = ({ dogs, fetchDogs, setFavourite, favouriteDogs }) => {
     <div>
       <button
         className="m-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        onClick={fetchDogs}
+        onClick={getData}
       >
         Generate Dog
       </button>
       <button
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        onClick={() => addFavourite(dogs, setFavourite)}
+        onClick={addFavourite(dogs, setFavourite)}
       >
         Add to favourites
       </button>
