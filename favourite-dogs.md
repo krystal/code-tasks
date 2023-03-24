@@ -2,13 +2,13 @@
 
 Create a new React app with whatever method you prefer. The app should have 2 routes:
 
-`/` - a screen where users can retrieve a random dog image with 2 options underneath. A button to add the dog to their favourites and another to load another random dog.
+`/` - a screen where users can retrieve a random dog with 2 options underneath. A button to add the dog to their favourites and another to load another random dog.
 
 `/faves` - a screen where users can see all of their favourite dogs with the option to remove them from their favourites
 
 There should be no duplicate favourites and all state should be stored in local storage, so if the user reloads the page all of their favourite fluffy friends should remain.
 
-You can load the random dog images using the following endpoint:
+You can load the random dogs using the following endpoint:
 
 https://random.dog/woof.json
 
