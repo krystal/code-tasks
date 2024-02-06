@@ -6,7 +6,7 @@ Create a new iOS app, the app should have two views:
 
 **Favourites** - a view where users can see all of their favourite dogs with the option to remove them from their favourites.
 
-Navigating between the views should be achieved via a tab bar controller
+Navigating between the views should be achieved via a tab bar.
 
 There should be no duplicate favourites and all state should be stored locally, so if the user reopens the app all of their favourite fluffy friends should remain.
 
