@@ -31,6 +31,5 @@ written README is more than sufficient. Please add some notes about how you
 approached the problem, and any difficulties or issues you encountered during
 development.
 
-Push the library into a private repository on GitHub, and invite both
-[@adamcooke](https://github.com/adamcooke) and
+Push the library into a private repository on GitHub, and invite 
 [@js1300](https://github.com/js1300) with read access.
