@@ -32,4 +32,4 @@ approached the problem, and any difficulties or issues you encountered during
 development.
 
 Push the library into a private repository on GitHub and invite 
-[@js1300](https://github.com/js1300) with read access.
+[@js1300](https://github.com/js1300) and [@jpswade](https://github.com/jpswade) with read access.
